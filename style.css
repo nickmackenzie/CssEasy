@@ -1,0 +1,28 @@
+
+    :root {
+      --black:#1c1a1f;
+      --grey:#838a9a;
+      --blue:#505b71;
+      --lgbrown:#625b55;
+      --drkbrwn:#3f3a37;
+      --yellow:#E8C547;
+      --green:#00A878;
+      --white:#EFF1ED;
+      --red:#DA2C38;
+
+      }
+
+
+
+
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container {
+    display: grid;
+    color: var(--main-light);
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--main-bg-color);
+}
