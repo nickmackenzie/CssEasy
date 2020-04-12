@@ -1,5 +1,7 @@
-
+/* Global Color Pallete */
     :root {
+
+      /* Solid Colors */
       --black:#1c1a1f;
       --grey:#838a9a;
       --blue:#505b71;
@@ -9,6 +11,7 @@
       --green:#00A878;
       --white:#EFF1ED;
       --red:#DA2C38;
+      
       /* Colors with opacity */
       --OPblack:#1c1a1fad;
       --OPgrey:#838a9a9a;
@@ -23,34 +26,39 @@
 
 
 
+
+
+/*Global Sizing Fixes */
+
+
+
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  background:
-  radial-gradient(black 3px, transparent 4px),
-  radial-gradient(black 3px, transparent 4px),
-  linear-gradient(#fff 4px, transparent 0),
-  linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
-  linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
-  #fff;
-  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
-  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-color: var(--white);
 }
+
+
+/*Containers - General Layout */
+
+
 
 .container {
     display: grid;
     color: var(--main-light);
     grid-template-columns: 2fr 1fr;
-    
-
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-
-   
+ 
 }
+
+
+
+/* Navigation Bar */
+
 
 
 nav {
@@ -86,6 +94,26 @@ nav {
   .nav-item a:hover {
       color: var(--green);
   }
+  @media only screen and (max-width: 600px) {
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--OPlgbrown);
+        padding: 0;
+        line-height: 2px;
+      
+    }
+    .nav-item a {
+    
+        font-size: 0.9rem;
+     
+      }
+    
+      }
+
+
+  /* Info Card */
+
 
 .card {
   border: 2px var(--black) solid;
@@ -131,19 +159,3 @@ nav {
   opacity: .9;
 }
 
-  @media only screen and (max-width: 600px) {
-.nav-links{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--OPlgbrown);
-    padding: 0;
-    line-height: 2px;
-  
-}
-.nav-item a {
-
-    font-size: 0.9rem;
- 
-  }
-
-  }
