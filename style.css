@@ -9,28 +9,47 @@
       --green:#00A878;
       --white:#EFF1ED;
       --red:#DA2C38;
-
+      /* Colors with opacity */
+      --OPblack:#1c1a1fad;
+      --OPgrey:#838a9a9a;
+      --OPblue:#505b71;
+      --OPdrkbrwn:#3e3f379d;
+      --OPlgbrown:#625b55da;
+      --OPyellow:#E8C547;
+      --OPgreen:#00A878;
+      --OPwhite: rgba(239, 241, 237, 0.637);
+      --OPred:#DA2C38;
       }
 
 
 
-
 * {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-   
-
+  padding: 0;
+  margin: 0;
 }
 
-.body{
-
+body {
+  background:
+  radial-gradient(black 3px, transparent 4px),
+  radial-gradient(black 3px, transparent 4px),
+  linear-gradient(#fff 4px, transparent 0),
+  linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+  linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+  #fff;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
+
 .container {
     display: grid;
     color: var(--main-light);
     grid-template-columns: 2fr 1fr;
-    background-color: var(--grey);
-    height: 100vh;
+    
+
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+   
 }
 
 
@@ -40,20 +59,19 @@ nav {
     padding-left: 30px;
     padding-right: 10px;
     min-height: 70px;
-    background-color: var(--lgbrown);
   }
   .navbar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--lgbrown);
+    background-color: var(--OPlgbrown);
   }
   
   
   .nav-links {
       display: flex;
     list-style: none;
-    background-color: var(--lgbrown);
+  
   }
   
   .nav-item a {
@@ -62,21 +80,62 @@ nav {
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--white);
-    background-color: var(--lgbrown);
+ 
   }
 
   .nav-item a:hover {
       color: var(--green);
   }
 
+.card {
+  border: 2px var(--black) solid;
+  margin: 20px;
+  max-width: 320px;
+  border-radius: 5px;
+  background-color: var(--OPdrkbrwn);
 
+  
+}
 
+.card-title{
+  
+  height: 30px;
+  color: var(--white);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2px;
+  margin: 2px;  
+}
+
+.card-text {
+  background-color: var(--OPwhite);
+  padding: 10px;
+  text-align: center;
+}
+.links {
+  background-color: var(--OPwhite);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  color: var(--drkbrwn);
+  border-top: 2px var(--black) solid;
+}
+
+.social {
+  color: var(--drkbrwn);
+  opacity: .5;
+}
+
+.social:hover {
+  color: var(--drkbrwn);
+  opacity: .9;
+}
 
   @media only screen and (max-width: 600px) {
 .nav-links{
     display: flex;
     flex-direction: column;
-    background-color: var(--lgbrown);
+    background-color: var(--OPlgbrown);
     padding: 0;
     line-height: 2px;
   
