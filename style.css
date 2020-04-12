@@ -11,7 +11,7 @@
       --green:#00A878;
       --white:#EFF1ED;
       --red:#DA2C38;
-      
+
       /* Colors with opacity */
       --OPblack:#1c1a1fad;
       --OPgrey:#838a9a9a;
@@ -159,3 +159,36 @@ nav {
   opacity: .9;
 }
 
+/* Form */
+
+form {
+  border: 1px var(--black) solid;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: var(--OPgrey);
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.form-label {
+  padding: 5px;
+  border-bottom: 1px var(--black) solid;
+  
+}
+
+.box {
+
+ padding: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: var(--OPwhite);
+}
